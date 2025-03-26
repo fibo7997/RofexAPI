@@ -297,5 +297,4 @@ with pd.ExcelWriter(excel_file) as writer:
     zscores_df.to_excel(writer, sheet_name='Z-Scores', index=False)
     portfolio_value_df.to_excel(writer, sheet_name='Portfolio Value', index=False)
 
-print(f"\nExcel file '{excel_file}' generated with trade metrics, z-scores, and portfolio data.")
 plt.show()
